@@ -1,0 +1,72 @@
+
+:root {
+  --bg-primary: #0b0c10;
+  --bg-secondary: #12141d;
+  --bg-card: #1f2330;
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-glow: rgba(99, 102, 241, 0.25);
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-color: #2e3446;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+
+.topbar {
+  width: 100%;
+  padding: 14px 28px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.IpText {
+  font-family: 'Fira Code', monospace, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 0;
+  }
+  
+  .topbar {
+    justify-content: center;
+    padding: 10px 16px;
+  }
+}
