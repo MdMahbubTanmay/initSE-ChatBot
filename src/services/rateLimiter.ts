@@ -6,7 +6,7 @@ interface UserUsageData {
   lastReset: Timestamp;
 }
 
-const DAILY_LIMIT = 10; 
+const DAILY_LIMIT = 100; 
 const ROLLING_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 
